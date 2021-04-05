@@ -1,12 +1,14 @@
 from django.conf.urls import include, url
 from django.urls import path
 from . import views
+from .admin import user_admin_site
 
 urlpatterns = [
   url(r'^dashboard/', views.dashboard, name='dashboard'),
   url(r'^register/', views.register, name='register'),
   url(r'^accounts/', include('django.contrib.auth.urls')),
   url(r'^oauth/', include('social_django.urls')),
+  path('users-admin', user_admin_site.urls),
   path('see_request/', views.see_request),
   path('see_userinfo/', views.user_info),
   path('private_route', views.private_route),
