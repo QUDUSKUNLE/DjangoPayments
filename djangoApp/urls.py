@@ -19,11 +19,12 @@ from django.conf.urls import url, include
 
 
 urlpatterns = [
-  path('admin/', admin.site.urls),
-  path('paypals/', include('paypal.urls')),
-  path('portfolios/', include('portfolio.urls')),
-  path('blogs/', include('blog.urls')),
-  path('users/', include('users.urls')),
-  path('', include('app.urls')),
-  url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('admin/', admin.site.urls),
+    path('paypals/', include('paypal.urls')),
+    path('portfolios/', include('portfolio.urls')),
+    path('blogs/', include('blog.urls')),
+    path('users/', include('users.urls')),
+    path('', include('app.urls')),
+    url(r'^api-auth/', include('rest_framework.urls',
+                               namespace='rest_framework')),
 ]

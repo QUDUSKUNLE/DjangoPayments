@@ -1,2 +1,2 @@
 #!/bin/bash
-flake8 --config=./linter.config .
+flake8 --config=./linters.config .

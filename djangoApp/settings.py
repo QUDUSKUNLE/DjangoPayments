@@ -29,7 +29,7 @@ SOCIAL_AUTH_GITHUB_SECRET = os.environ.get("SOCIAL_AUTH_GITHUB_SECRET")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-  '33bb3d5f84f6.ngrok.io'
+    '33bb3d5f84f6.ngrok.io'
 ]
 
 # This allows https request
